@@ -1,41 +1,43 @@
-Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Aditya Ramguru
-======================================================================================================================================
+# Aditya Ramguru
 
-Python Developer and Flutter Enthusiast
----------------------------------------
+**Infrastructure & platform engineer** · zero-trust networking · cloud security · AI developer platforms
 
-* 🌍  I'm based in Bangalore
-* ✉️  You can contact me at [aditya.ramguru@gmail.com](mailto:aditya.ramguru@gmail.com)
-* 🤝  I'm open to collaborating on Interesting projects
+I'm a Software Engineer at Aurm, a secure wealth-storage startup in Bangalore, where I'm the sole infrastructure engineer and report directly to the CTO. I own our zero-trust network, cloud security and compliance, observability, and the AI developer platform every engineer builds on, across AWS and GCP.
 
-### Skills
+I like working out how many users a system can take, where it breaks, and which pieces fit best. The cloud never really ends, and that's the fun part.
 
+### What I've built
 
-<p align="left">
-<a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="36" height="36" alt="Python" /></a><a href="https://www.oracle.com/java/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="36" height="36" alt="Java" /></a><a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="36" height="36" alt="Git" /></a><a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg" width="36" height="36" alt="C" /></a><a href="https://flask.palletsprojects.com/en/2.0.x/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/flask-colored.svg" width="36" height="36" alt="Flask" /></a><a href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg" width="36" height="36" alt="Firebase" /></a><a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="36" height="36" alt="MySQL" /></a><a href="https://aws.amazon.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/aws-colored.svg" width="36" height="36" alt="Amazon Web Services" /></a>
-</p>
+- **Zero-trust edge network.** A WireGuard/VyOS hub-and-spoke mesh connecting 30+ edge nodes to AWS, with automated peer registration and domain-based split tunneling (dnsmasq, ipset, iptables policy routing).
+- **Identity-based access.** HA Teleport (DynamoDB-backed) exposing 120 internal apps across the edge fleet, layered behind Cloudflare WARP for defense in depth. Wrote a retry patch for Teleport's application tunnel client, being prepared for upstream.
+- **Cloudflare networking as code.** Tunnels, virtual networks, split tunnels and Cloudflare Mesh across AWS and GCP, codified as Terraform modules; moved public load balancers behind Cloudflare Tunnel + Access.
+- **AI developer platform.** A LiteLLM gateway on ECS Fargate + RDS routing Claude Code to AWS Bedrock for 50 users with org and per-user budgets. Claude Code skills and subagents used by every developer, so 100% of PRs are agent-driven.
+- **Security & compliance.** Cut Trivy findings from 83 critical/high to 3 (96%), enforced read-only root filesystems across production ECS services to clear a third-party cloud security audit, and automated AWS Security Hub remediation.
+- **Observability.** Self-hosted Mimir / Loki / Grafana / Alloy on AWS with S3-backed storage and self-healing ASGs, monitoring the whole edge fleet.
 
+### Stack
 
-### Socials
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare_Zero_Trust-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat-square&logo=wireguard&logoColor=white)
+![Teleport](https://img.shields.io/badge/Teleport-512FC9?style=flat-square)
+![Grafana](https://img.shields.io/badge/Grafana_LGTM-F46800?style=flat-square&logo=grafana&logoColor=white)
+![Wazuh](https://img.shields.io/badge/Wazuh-3595F9?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white)
 
-<p align="left"> <a href="https://www.github.com/ar-0911" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /> </picture> </a> <a href="http://www.instagram.com/aditya.ramguru" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" /> </picture> </a> <a href="https://www.linkedin.com/in/aditya-ramguru-995423218/" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /> </picture> </a> <a href="https://www.threads.net/@aditya.ramguru" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/threads-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/threads.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/threads.svg" width="32" height="32" /> </picture> </a></p>
+### Background
 
-### Badges
+- B.Tech in Computer Science (Bioinformatics), VIT Vellore, 2021–2025 · CGPA 9.53/10 · merit scholar all four years
+- AWS Certified Solutions Architect – Associate
+- Academic intern at NUS Singapore (2023–24): led a six-person team building Verdict Hub, a legal-outcome prediction model deployed on AWS SageMaker
 
-<b>My GitHub Stats</b>
+### Get in touch
 
-<a href="http://www.github.com/ar-0911"><img src="https://github-readme-stats.vercel.app/api?username=ar-0911&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="ar-0911's GitHub stats" /></a>
-
-<a href="http://www.github.com/ar-0911"><img src="https://github-readme-streak-stats.herokuapp.com/?user=ar-0911&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
-
-<a href="http://www.github.com/ar-0911"><img src="https://github-readme-activity-graph.cyclic.app/graph?username=ar-0911&bg_color=1c1917&color=ffffff&line=0891b2&point=ffffff&area_color=1c1917&area=true&hide_border=true&custom_title=GitHub%20Commits%20Graph" alt="GitHub Commits Graph" /></a>
-
-<a href="https://github.com/ar-0911" align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ar-0911&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20%Languages" alt="Top Languages" /></a>
-
-<b>Top Repositories</b>
-
-<div width="100%" align="center"><a href="https://github.com/ar-0911/bookease-api" align="left"><img align="left" width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=ar-0911&repo=bookease-api&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en" /></a><a href="https://github.com/ar-0911/chat-app-flutter" align="right"><img align="right" width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=ar-0911&repo=chat-app-flutter&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en" /></a></div><br /><br /><br /><br /><br /><br /><br />
-
-<br /><br /><br /><br /><br />
-
-<div width="100%" align="center"><a href="https://github.com/ar-0911/learnpy" align="left"><img align="left" width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=ar-0911&repo=learnpy&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en" /></a><a href="https://github.com/ar-0911/operating_system" align="right"><img align="right" width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=ar-0911&repo=operating_system&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en" /></a></div>
+[![Email](https://img.shields.io/badge/aditya.ramguru@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:aditya.ramguru@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aditya-ramguru-995423218/)
