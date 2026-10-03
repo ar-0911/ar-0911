@@ -1,43 +1,31 @@
-# Aditya Ramguru
+<div align="center">
 
-**Infrastructure & platform engineer** · zero-trust networking · cloud security · AI developer platforms
+<img src="assets/header.svg" width="100%" alt="Aditya Ramguru: infrastructure engineer working on zero-trust networking, cloud security and AI developer platforms" />
 
-I'm a Software Engineer at Aurm, a secure wealth-storage startup in Bangalore, where I'm the sole infrastructure engineer and report directly to the CTO. I own our zero-trust network, cloud security and compliance, observability, and the AI developer platform every engineer builds on, across AWS and GCP.
+<a href="https://www.linkedin.com/in/aditya-ramguru-995423218/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="mailto:aditya.ramguru@gmail.com"><img src="https://img.shields.io/badge/Email-22d3ee?style=for-the-badge&logo=gmail&logoColor=0d1117" alt="Email" /></a>
+<img src="https://img.shields.io/badge/AWS_Solutions_Architect-232F3E?style=for-the-badge&logoColor=white" alt="AWS Certified Solutions Architect" />
+<img src="https://komarev.com/ghpvc/?username=ar-0911&style=for-the-badge&color=a78bfa&label=profile+views" alt="Profile views" />
 
-I like working out how many users a system can take, where it breaks, and which pieces fit best. The cloud never really ends, and that's the fun part.
+<br/><br/>
 
-### What I've built
+<img src="assets/title-impact.svg" width="100%" alt="Impact" />
+<img src="assets/stats.svg" width="100%" alt="30+ edge nodes on a WireGuard/VyOS mesh, 120 internal apps behind Teleport and Cloudflare WARP, 96% fewer critical/high Trivy findings, 100% of PRs agent-driven via Claude Code" />
 
-- **Zero-trust edge network.** A WireGuard/VyOS hub-and-spoke mesh connecting 30+ edge nodes to AWS, with automated peer registration and domain-based split tunneling (dnsmasq, ipset, iptables policy routing).
-- **Identity-based access.** HA Teleport (DynamoDB-backed) exposing 120 internal apps across the edge fleet, layered behind Cloudflare WARP for defense in depth. Wrote a retry patch for Teleport's application tunnel client, being prepared for upstream.
-- **Cloudflare networking as code.** Tunnels, virtual networks, split tunnels and Cloudflare Mesh across AWS and GCP, codified as Terraform modules; moved public load balancers behind Cloudflare Tunnel + Access.
-- **AI developer platform.** A LiteLLM gateway on ECS Fargate + RDS routing Claude Code to AWS Bedrock for 50 users with org and per-user budgets. Claude Code skills and subagents used by every developer, so 100% of PRs are agent-driven.
-- **Security & compliance.** Cut Trivy findings from 83 critical/high to 3 (96%), enforced read-only root filesystems across production ECS services to clear a third-party cloud security audit, and automated AWS Security Hub remediation.
-- **Observability.** Self-hosted Mimir / Loki / Grafana / Alloy on AWS with S3-backed storage and self-healing ASGs, monitoring the whole edge fleet.
+<img src="assets/title-build.svg" width="100%" alt="What I build" />
+<img src="assets/work.svg" width="100%" alt="Zero-trust access, AI developer platform, and security and observability work" />
 
-### Stack
+<img src="assets/title-stack.svg" width="100%" alt="Stack" />
+<img src="assets/stack.svg" width="100%" alt="AWS, Google Cloud, Terraform, Docker, Linux, GitHub Actions, Cloudflare, WireGuard, Teleport, VyOS, Trivy, Wazuh, Grafana, Prometheus, Python, Node.js, Bash, Claude Code" />
 
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare_Zero_Trust-F38020?style=flat-square&logo=cloudflare&logoColor=white)
-![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat-square&logo=wireguard&logoColor=white)
-![Teleport](https://img.shields.io/badge/Teleport-512FC9?style=flat-square)
-![Grafana](https://img.shields.io/badge/Grafana_LGTM-F46800?style=flat-square&logo=grafana&logoColor=white)
-![Wazuh](https://img.shields.io/badge/Wazuh-3595F9?style=flat-square)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white)
+<img src="assets/title-activity.svg" width="100%" alt="Activity" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ar-0911/ar-0911/output/snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/ar-0911/ar-0911/output/snake.svg" width="100%" alt="Contribution graph being eaten by a snake" />
+</picture>
 
-### Background
+<img src="assets/footer.svg" width="100%" alt="Let's build something reliable" />
 
-- B.Tech in Computer Science (Bioinformatics), VIT Vellore, 2021–2025 · CGPA 9.53/10 · merit scholar all four years
-- AWS Certified Solutions Architect – Associate
-- Academic intern at NUS Singapore (2023–24): led a six-person team building Verdict Hub, a legal-outcome prediction model deployed on AWS SageMaker
+<sub>B.Tech CS (Bioinformatics), VIT Vellore · CGPA 9.53 · ex-NUS Singapore academic intern</sub>
 
-### Get in touch
-
-[![Email](https://img.shields.io/badge/aditya.ramguru@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:aditya.ramguru@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aditya-ramguru-995423218/)
+</div>
