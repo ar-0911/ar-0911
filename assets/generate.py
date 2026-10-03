@@ -431,10 +431,10 @@ def footer():
     return frame(W, H, body)
 
 
-open(f'{OUT}/header.svg', 'w').write(header())
-open(f'{OUT}/stats.svg', 'w').write(stats())
+open(f'{OUT}/header-v2.svg', 'w').write(header())
+open(f'{OUT}/impact.svg', 'w').write(stats())
 open(f'{OUT}/stack.svg', 'w').write(stack())
-open(f'{OUT}/work.svg', 'w').write(work())
+open(f'{OUT}/work-v2.svg', 'w').write(work())
 open(f'{OUT}/footer.svg', 'w').write(footer())
 title('impact', '# what changed because of my work', CYAN, 'title-impact.svg')
 title('what-i-build', '# the systems I own', VIOLET, 'title-build.svg')
