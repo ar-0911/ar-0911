@@ -34,7 +34,7 @@
     <rect x="36" y="36" width="360" height="358" rx="16" fill="#111826" stroke="#1f2a3d"/>
     
     <text x="60" y="76" class="mono" font-size="12" fill="#22d3ee" letter-spacing="1.5">01 · ZERO-TRUST ACCESS</text>
-    <text x="60" y="104" class="sans" font-size="20" font-weight="700" fill="#e6edf3">Edge mesh + identity access</text>
+    <text x="60" y="104" class="sans" font-size="20" font-weight="700" fill="#e6edf3">Zero-trust remote access</text>
     <g transform="translate(60,132)">
       <rect width="312" height="128" rx="10" fill="#0d1117" stroke="#1f2a3d"/>
       <path id="ztp" d="M30,64 H282" stroke="#1f2a3d" stroke-width="2"/>
@@ -48,16 +48,16 @@
       <circle cx="116" cy="30" r="5" fill="#34d399" opacity="0"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.3;.38;.5;1" dur="3s" repeatCount="indefinite"/></circle>
       <circle cx="196" cy="30" r="5" fill="#34d399" opacity="0"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.6;.68;.8;1" dur="3s" repeatCount="indefinite"/></circle>
     </g>
-    <text x="60" y="292" class="sans" font-size="14" fill="#8b98a9">WireGuard/VyOS hub-and-spoke for 30+ nodes,</text>
-    <text x="60" y="312" class="sans" font-size="14" fill="#8b98a9">HA Teleport for 120 apps, Cloudflare WARP</text>
-    <text x="60" y="332" class="sans" font-size="14" fill="#8b98a9">in front for defense in depth.</text>
+    <text x="60" y="292" class="sans" font-size="14" fill="#8b98a9">Private hub-and-spoke network linking</text>
+    <text x="60" y="312" class="sans" font-size="14" fill="#8b98a9">remote sites to the cloud, identity-based</text>
+    <text x="60" y="332" class="sans" font-size="14" fill="#8b98a9">access to every internal tool, defense in depth.</text>
     <text x="60" y="366" class="mono" font-size="11.5" fill="#22d3ee">wireguard · vyos · teleport · terraform</text>
   </g>
 <g class="card" style="animation-delay:0.15s">
     <rect x="420" y="36" width="360" height="358" rx="16" fill="#111826" stroke="#1f2a3d"/>
     
-    <text x="444" y="76" class="mono" font-size="12" fill="#a78bfa" letter-spacing="1.5">02 · AI DEV PLATFORM</text>
-    <text x="444" y="104" class="sans" font-size="20" font-weight="700" fill="#e6edf3">Claude Code for 50 engineers</text>
+    <text x="444" y="76" class="mono" font-size="12" fill="#a78bfa" letter-spacing="1.5">02 · AI GATEWAY &amp; AGENTS</text>
+    <text x="444" y="104" class="sans" font-size="20" font-weight="700" fill="#e6edf3">AI gateway + agentic coding</text>
     <g transform="translate(444,132)">
       <rect width="312" height="128" rx="10" fill="#0d1117" stroke="#1f2a3d"/>
       <circle cx="30" cy="24" r="9" fill="#111826" stroke="#8b98a9"/><path id="ai0" d="M40,24 C 90,24 90,64 128,64 L 270,64" stroke="#1f2a3d" stroke-width="1.6"/><circle r="4" fill="#a78bfa"><animateMotion dur="2.6s" begin="0.0s" repeatCount="indefinite"><mpath href="#ai0"/></animateMotion></circle><circle cx="30" cy="64" r="9" fill="#111826" stroke="#8b98a9"/><path id="ai1" d="M40,64 C 90,64 90,64 128,64 L 270,64" stroke="#1f2a3d" stroke-width="1.6"/><circle r="4" fill="#a78bfa"><animateMotion dur="2.6s" begin="0.8s" repeatCount="indefinite"><mpath href="#ai1"/></animateMotion></circle><circle cx="30" cy="104" r="9" fill="#111826" stroke="#8b98a9"/><path id="ai2" d="M40,104 C 90,104 90,64 128,64 L 270,64" stroke="#1f2a3d" stroke-width="1.6"/><circle r="4" fill="#a78bfa"><animateMotion dur="2.6s" begin="1.6s" repeatCount="indefinite"><mpath href="#ai2"/></animateMotion></circle>
@@ -72,10 +72,10 @@
         <animate attributeName="fill" values="#34d399;#fbbf24;#fbbf24;#34d399" keyTimes="0;.7;.92;1" dur="5s" repeatCount="indefinite"/>
       </rect>
     </g>
-    <text x="444" y="292" class="sans" font-size="14" fill="#8b98a9">LiteLLM gateway on ECS Fargate routing to</text>
-    <text x="444" y="312" class="sans" font-size="14" fill="#8b98a9">AWS Bedrock with org and per-user budgets;</text>
-    <text x="444" y="332" class="sans" font-size="14" fill="#8b98a9">skills + subagents drive 100% of PRs.</text>
-    <text x="444" y="366" class="mono" font-size="11.5" fill="#a78bfa">litellm · ecs · bedrock · claude code</text>
+    <text x="444" y="292" class="sans" font-size="14" fill="#8b98a9">Self-hosted LiteLLM gateway routing Claude</text>
+    <text x="444" y="312" class="sans" font-size="14" fill="#8b98a9">Code to AWS Bedrock with team budgets, plus</text>
+    <text x="444" y="332" class="sans" font-size="14" fill="#8b98a9">the skills and subagents the team builds with.</text>
+    <text x="444" y="366" class="mono" font-size="11.5" fill="#a78bfa">litellm · bedrock · claude code · subagents</text>
   </g>
 <g class="card" style="animation-delay:0.30s">
     <rect x="804" y="36" width="360" height="358" rx="16" fill="#111826" stroke="#1f2a3d"/>
@@ -84,16 +84,15 @@
     <text x="828" y="104" class="sans" font-size="20" font-weight="700" fill="#e6edf3">Audit-ready, fully observed</text>
     <g transform="translate(828,132)">
       <rect width="312" height="128" rx="10" fill="#0d1117" stroke="#1f2a3d"/>
-      <text x="16" y="24" class="mono" font-size="9.5" fill="#8b98a9">trivy crit+high</text>
+      <text x="16" y="24" class="mono" font-size="9.5" fill="#8b98a9">critical vulns</text>
       <rect x="16" y="34" width="22" height="80" rx="3" fill="#f87171" opacity=".85">
         <animate attributeName="height" values="80;80;3;3;80" keyTimes="0;.2;.5;.9;1" dur="6s" repeatCount="indefinite"/>
         <animate attributeName="y" values="34;34;111;111;34" keyTimes="0;.2;.5;.9;1" dur="6s" repeatCount="indefinite"/>
         <animate attributeName="fill" values="#f87171;#f87171;#34d399;#34d399;#f87171" keyTimes="0;.2;.5;.9;1" dur="6s" repeatCount="indefinite"/>
       </rect>
-      <text x="48" y="64" class="sans" font-size="22" font-weight="800" fill="#e6edf3">83<animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.45;.5;.9;1" dur="6s" repeatCount="indefinite"/></text>
-      <text x="48" y="64" class="sans" font-size="22" font-weight="800" fill="#34d399" opacity="0">3<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.45;.5;.9;1" dur="6s" repeatCount="indefinite"/></text>
-      <text x="48" y="84" class="mono" font-size="9.5" fill="#8b98a9">findings</text>
-      <text x="120" y="24" class="mono" font-size="9.5" fill="#8b98a9">grafana · edge fleet</text>
+      <text x="48" y="64" class="sans" font-size="15" font-weight="800" fill="#e6edf3">open<animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.45;.5;.9;1" dur="6s" repeatCount="indefinite"/></text>
+      <text x="48" y="64" class="sans" font-size="15" font-weight="800" fill="#34d399" opacity="0">fixed<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.45;.5;.9;1" dur="6s" repeatCount="indefinite"/></text>
+            <text x="120" y="24" class="mono" font-size="9.5" fill="#8b98a9">grafana · edge fleet</text>
       <g transform="translate(120,36)">
         <clipPath id="sc"><rect width="176" height="80"/></clipPath>
         <g clip-path="url(#sc)">
@@ -106,9 +105,9 @@
         <path d="M0,79 H176" stroke="#1f2a3d"/>
       </g>
     </g>
-    <text x="828" y="292" class="sans" font-size="14" fill="#8b98a9">Cleared a third-party cloud security audit,</text>
-    <text x="828" y="312" class="sans" font-size="14" fill="#8b98a9">automated Security Hub remediation, Wazuh</text>
-    <text x="828" y="332" class="sans" font-size="14" fill="#8b98a9">SIEM and a self-hosted LGTM stack.</text>
+    <text x="828" y="292" class="sans" font-size="14" fill="#8b98a9">Hardened containers and automated cloud</text>
+    <text x="828" y="312" class="sans" font-size="14" fill="#8b98a9">security fixes that cleared an external audit,</text>
+    <text x="828" y="332" class="sans" font-size="14" fill="#8b98a9">plus a SIEM and self-hosted Grafana stack.</text>
     <text x="828" y="366" class="mono" font-size="11.5" fill="#34d399">trivy · security hub · wazuh · grafana</text>
   </g>
 </g>

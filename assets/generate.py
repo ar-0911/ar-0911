@@ -160,32 +160,40 @@ def header():
 
 # ---------------------------------------------------------------- stats
 def stats():
-    W, H = 1200, 190
+    W, H = 1200, 236
+    glyphs = {
+        'shield': 'M12 3 L19 6 V11 C19 15.5 16 18.5 12 21 C8 18.5 5 15.5 5 11 V6 Z M12 10 V14 M10 10 A2 2 0 1 1 14 10',
+        'gateway': 'M3 6 C8 6 8 12 12 12 M3 18 C8 18 8 12 12 12 M3 12 H12 M12 12 H21 M18 9 L21 12 L18 15',
+        'spark': 'M12 3 L13.8 10.2 L21 12 L13.8 13.8 L12 21 L10.2 13.8 L3 12 L10.2 10.2 Z',
+        'check': 'M12 3 A9 9 0 1 1 11.99 3 M8 12.5 L11 15.5 L16.5 9',
+    }
     cards = [
-        ('30+', 'edge nodes on a', 'WireGuard / VyOS mesh', CYAN, .78),
-        ('120', 'internal apps behind', 'Teleport + Cloudflare WARP', VIOLET, .9),
-        ('96%', 'fewer critical/high', 'Trivy findings (83 → 3)', GREEN, .96),
-        ('100%', 'of PRs agent-driven', 'via Claude Code skills', AMBER, 1.0),
+        ('shield', 'Zero-trust by default', ['Remote sites and internal tools', 'reachable only through a private,', 'identity-checked network.'], CYAN),
+        ('gateway', 'One governed AI gateway', ['Every engineer reaches Claude', 'through a single gateway with', 'spend controls built in.'], VIOLET),
+        ('spark', 'Agentic engineering', ['Skills and subagents the team', 'ships with every day, improved', 'from real failure cases.'], AMBER),
+        ('check', 'Audit-ready cloud', ['Hardened containers and automated', 'fixes that cleared an external', 'cloud security audit.'], GREEN),
     ]
     cw, gap, x0 = 264, 24, 36
     out = []
-    for i, (num, l1, l2, c, frac) in enumerate(cards):
+    for i, (g, title, lines, c) in enumerate(cards):
         x = x0 + i * (cw + gap)
         d = i * .18
-        bar = (cw - 48) * frac
+        body = ''.join(f'<text x="{x+24}" y="{136+k*19}" class="sans" font-size="13.5" fill="{MUTED}">{ln}</text>' for k, ln in enumerate(lines))
         out.append(f'''<g class="card" style="animation-delay:{d:.2f}s">
-    <rect x="{x}" y="28" width="{cw}" height="134" rx="14" fill="{PANEL}" stroke="{STROKE}"/>
-    <rect x="{x}" y="28" width="{cw}" height="3" rx="1.5" fill="{c}" opacity=".85"/>
-    <text x="{x+24}" y="86" class="sans" font-size="40" font-weight="800" fill="{c}">{num}</text>
-    <text x="{x+24}" y="112" class="sans" font-size="14" fill="{TEXT}">{l1}</text>
-    <text x="{x+24}" y="131" class="sans" font-size="14" fill="{MUTED}">{l2}</text>
-    <rect x="{x+24}" y="144" width="{cw-48}" height="5" rx="2.5" fill="{STROKE}"/>
-    <rect x="{x+24}" y="144" width="0" height="5" rx="2.5" fill="{c}">
-      <animate attributeName="width" from="0" to="{bar:.1f}" dur="1.4s" begin="{.4+d:.2f}s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>
-    </rect>
-    <circle cx="{x+cw-28}" cy="58" r="4" fill="{c}">
-      <animate attributeName="opacity" values="1;.2;1" dur="2s" begin="{d:.2f}s" repeatCount="indefinite"/>
+    <rect x="{x}" y="24" width="{cw}" height="188" rx="14" fill="{PANEL}" stroke="{STROKE}"/>
+    <rect x="{x}" y="24" width="{cw}" height="3" rx="1.5" fill="{c}" opacity=".85"/>
+    <circle cx="{x+46}" cy="70" r="22" fill="{c}" fill-opacity=".1" stroke="{c}" stroke-opacity=".35"/>
+    <circle cx="{x+46}" cy="70" r="22" fill="none" stroke="{c}">
+      <animate attributeName="r" values="22;34" dur="2.6s" begin="{d:.2f}s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values=".5;0" dur="2.6s" begin="{d:.2f}s" repeatCount="indefinite"/>
     </circle>
+    <g transform="translate({x+34},58)">
+      <path d="{glyphs[g]}" stroke="{c}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100">
+        <animate attributeName="stroke-dashoffset" values="100;0;0;100" keyTimes="0;.3;.85;1" dur="5s" begin="{.3+d:.2f}s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <text x="{x+24}" y="114" class="sans" font-size="17" font-weight="700" fill="{TEXT}">{title}</text>
+    {body}
   </g>''')
     style = '''  .card { animation: pop .7s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: center; }
   @keyframes pop { from { opacity: 0; transform: translateY(14px) scale(.97); } to { opacity: 1; transform: none; } }'''
@@ -283,7 +291,7 @@ def work():
     x = x0
     zt = f'''
     <text x="{x+24}" y="{y0+40}" class="mono" font-size="12" fill="{CYAN}" letter-spacing="1.5">01 · ZERO-TRUST ACCESS</text>
-    <text x="{x+24}" y="{y0+68}" class="sans" font-size="20" font-weight="700" fill="{TEXT}">Edge mesh + identity access</text>
+    <text x="{x+24}" y="{y0+68}" class="sans" font-size="20" font-weight="700" fill="{TEXT}">Zero-trust remote access</text>
     <g transform="translate({x+24},{y0+96})">
       <rect width="312" height="128" rx="10" fill="{BG}" stroke="{STROKE}"/>
       <path id="ztp" d="M30,64 H282" stroke="{STROKE}" stroke-width="2"/>
@@ -297,9 +305,9 @@ def work():
       <circle cx="116" cy="30" r="5" fill="{GREEN}" opacity="0"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.3;.38;.5;1" dur="3s" repeatCount="indefinite"/></circle>
       <circle cx="196" cy="30" r="5" fill="{GREEN}" opacity="0"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.6;.68;.8;1" dur="3s" repeatCount="indefinite"/></circle>
     </g>
-    <text x="{x+24}" y="{y0+256}" class="sans" font-size="14" fill="{MUTED}">WireGuard/VyOS hub-and-spoke for 30+ nodes,</text>
-    <text x="{x+24}" y="{y0+276}" class="sans" font-size="14" fill="{MUTED}">HA Teleport for 120 apps, Cloudflare WARP</text>
-    <text x="{x+24}" y="{y0+296}" class="sans" font-size="14" fill="{MUTED}">in front for defense in depth.</text>
+    <text x="{x+24}" y="{y0+256}" class="sans" font-size="14" fill="{MUTED}">Private hub-and-spoke network linking</text>
+    <text x="{x+24}" y="{y0+276}" class="sans" font-size="14" fill="{MUTED}">remote sites to the cloud, identity-based</text>
+    <text x="{x+24}" y="{y0+296}" class="sans" font-size="14" fill="{MUTED}">access to every internal tool, defense in depth.</text>
     <text x="{x+24}" y="{y0+330}" class="mono" font-size="11.5" fill="{CYAN}">wireguard · vyos · teleport · terraform</text>'''
 
     # 2. AI platform: requests from devs through gateway to Bedrock with budget bar
@@ -310,8 +318,8 @@ def work():
         f'<circle r="4" fill="{VIOLET}"><animateMotion dur="2.6s" begin="{i*.8:.1f}s" repeatCount="indefinite"><mpath href="#ai{i}"/></animateMotion></circle>'
         for i in range(3))
     ai = f'''
-    <text x="{x+24}" y="{y0+40}" class="mono" font-size="12" fill="{VIOLET}" letter-spacing="1.5">02 · AI DEV PLATFORM</text>
-    <text x="{x+24}" y="{y0+68}" class="sans" font-size="20" font-weight="700" fill="{TEXT}">Claude Code for 50 engineers</text>
+    <text x="{x+24}" y="{y0+40}" class="mono" font-size="12" fill="{VIOLET}" letter-spacing="1.5">02 · AI GATEWAY &amp; AGENTS</text>
+    <text x="{x+24}" y="{y0+68}" class="sans" font-size="20" font-weight="700" fill="{TEXT}">AI gateway + agentic coding</text>
     <g transform="translate({x+24},{y0+96})">
       <rect width="312" height="128" rx="10" fill="{BG}" stroke="{STROKE}"/>
       {devs}
@@ -326,10 +334,10 @@ def work():
         <animate attributeName="fill" values="{GREEN};{AMBER};{AMBER};{GREEN}" keyTimes="0;.7;.92;1" dur="5s" repeatCount="indefinite"/>
       </rect>
     </g>
-    <text x="{x+24}" y="{y0+256}" class="sans" font-size="14" fill="{MUTED}">LiteLLM gateway on ECS Fargate routing to</text>
-    <text x="{x+24}" y="{y0+276}" class="sans" font-size="14" fill="{MUTED}">AWS Bedrock with org and per-user budgets;</text>
-    <text x="{x+24}" y="{y0+296}" class="sans" font-size="14" fill="{MUTED}">skills + subagents drive 100% of PRs.</text>
-    <text x="{x+24}" y="{y0+330}" class="mono" font-size="11.5" fill="{VIOLET}">litellm · ecs · bedrock · claude code</text>'''
+    <text x="{x+24}" y="{y0+256}" class="sans" font-size="14" fill="{MUTED}">Self-hosted LiteLLM gateway routing Claude</text>
+    <text x="{x+24}" y="{y0+276}" class="sans" font-size="14" fill="{MUTED}">Code to AWS Bedrock with team budgets, plus</text>
+    <text x="{x+24}" y="{y0+296}" class="sans" font-size="14" fill="{MUTED}">the skills and subagents the team builds with.</text>
+    <text x="{x+24}" y="{y0+330}" class="mono" font-size="11.5" fill="{VIOLET}">litellm · bedrock · claude code · subagents</text>'''
 
     # 3. Security & observability: Trivy bars drop, live sparkline
     x = x0 + 2 * (cw + gap)
@@ -340,16 +348,15 @@ def work():
     <text x="{x+24}" y="{y0+68}" class="sans" font-size="20" font-weight="700" fill="{TEXT}">Audit-ready, fully observed</text>
     <g transform="translate({x+24},{y0+96})">
       <rect width="312" height="128" rx="10" fill="{BG}" stroke="{STROKE}"/>
-      <text x="16" y="24" class="mono" font-size="9.5" fill="{MUTED}">trivy crit+high</text>
+      <text x="16" y="24" class="mono" font-size="9.5" fill="{MUTED}">critical vulns</text>
       <rect x="16" y="34" width="22" height="80" rx="3" fill="#f87171" opacity=".85">
         <animate attributeName="height" values="80;80;3;3;80" keyTimes="0;.2;.5;.9;1" dur="6s" repeatCount="indefinite"/>
         <animate attributeName="y" values="34;34;111;111;34" keyTimes="0;.2;.5;.9;1" dur="6s" repeatCount="indefinite"/>
         <animate attributeName="fill" values="#f87171;#f87171;{GREEN};{GREEN};#f87171" keyTimes="0;.2;.5;.9;1" dur="6s" repeatCount="indefinite"/>
       </rect>
-      <text x="48" y="64" class="sans" font-size="22" font-weight="800" fill="{TEXT}">83<animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.45;.5;.9;1" dur="6s" repeatCount="indefinite"/></text>
-      <text x="48" y="64" class="sans" font-size="22" font-weight="800" fill="{GREEN}" opacity="0">3<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.45;.5;.9;1" dur="6s" repeatCount="indefinite"/></text>
-      <text x="48" y="84" class="mono" font-size="9.5" fill="{MUTED}">findings</text>
-      <text x="120" y="24" class="mono" font-size="9.5" fill="{MUTED}">grafana · edge fleet</text>
+      <text x="48" y="64" class="sans" font-size="15" font-weight="800" fill="{TEXT}">open<animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.45;.5;.9;1" dur="6s" repeatCount="indefinite"/></text>
+      <text x="48" y="64" class="sans" font-size="15" font-weight="800" fill="{GREEN}" opacity="0">fixed<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.45;.5;.9;1" dur="6s" repeatCount="indefinite"/></text>
+            <text x="120" y="24" class="mono" font-size="9.5" fill="{MUTED}">grafana · edge fleet</text>
       <g transform="translate(120,36)">
         <clipPath id="sc"><rect width="176" height="80"/></clipPath>
         <g clip-path="url(#sc)">
@@ -362,9 +369,9 @@ def work():
         <path d="M0,79 H176" stroke="{STROKE}"/>
       </g>
     </g>
-    <text x="{x+24}" y="{y0+256}" class="sans" font-size="14" fill="{MUTED}">Cleared a third-party cloud security audit,</text>
-    <text x="{x+24}" y="{y0+276}" class="sans" font-size="14" fill="{MUTED}">automated Security Hub remediation, Wazuh</text>
-    <text x="{x+24}" y="{y0+296}" class="sans" font-size="14" fill="{MUTED}">SIEM and a self-hosted LGTM stack.</text>
+    <text x="{x+24}" y="{y0+256}" class="sans" font-size="14" fill="{MUTED}">Hardened containers and automated cloud</text>
+    <text x="{x+24}" y="{y0+276}" class="sans" font-size="14" fill="{MUTED}">security fixes that cleared an external audit,</text>
+    <text x="{x+24}" y="{y0+296}" class="sans" font-size="14" fill="{MUTED}">plus a SIEM and self-hosted Grafana stack.</text>
     <text x="{x+24}" y="{y0+330}" class="mono" font-size="11.5" fill="{GREEN}">trivy · security hub · wazuh · grafana</text>'''
 
     for i, inner in enumerate((zt, ai, sec)):
@@ -429,7 +436,7 @@ open(f'{OUT}/stats.svg', 'w').write(stats())
 open(f'{OUT}/stack.svg', 'w').write(stack())
 open(f'{OUT}/work.svg', 'w').write(work())
 open(f'{OUT}/footer.svg', 'w').write(footer())
-title('impact', '# numbers from production', CYAN, 'title-impact.svg')
+title('impact', '# what changed because of my work', CYAN, 'title-impact.svg')
 title('what-i-build', '# the systems I own', VIOLET, 'title-build.svg')
 title('stack', '# tools I use daily', GREEN, 'title-stack.svg')
 title('activity', '# contributions', AMBER, 'title-activity.svg')
