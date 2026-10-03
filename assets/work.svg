@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" fill="none">
+<defs>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M32 0H0V32" fill="none" stroke="#1f2a3d" stroke-width="1" opacity=".55"/>
+  </pattern>
+  <radialGradient id="glowC" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#22d3ee" stop-opacity=".35"/>
+    <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowV" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#a78bfa" stop-opacity=".28"/>
+    <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="brand" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#22d3ee"/>
+    <stop offset="1" stop-color="#a78bfa"/>
+  </linearGradient>
+  <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3"/>
+  </filter>
+  <clipPath id="round"><rect width="1200" height="430" rx="18"/></clipPath>
+</defs>
+<style>
+  .sans { font-family: 'Segoe UI', Ubuntu, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+  .mono { font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  .card { animation: pop .7s cubic-bezier(.2,.8,.2,1) both; }
+  @keyframes pop { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+</style>
+<g clip-path="url(#round)">
+  <rect width="1200" height="430" fill="#0d1117"/>
+  <rect width="1200" height="430" fill="url(#grid)"/>
+<g class="card" style="animation-delay:0.00s">
+    <rect x="36" y="36" width="360" height="358" rx="16" fill="#111826" stroke="#1f2a3d"/>
+    
+    <text x="60" y="76" class="mono" font-size="12" fill="#22d3ee" letter-spacing="1.5">01 · ZERO-TRUST ACCESS</text>
+    <text x="60" y="104" class="sans" font-size="20" font-weight="700" fill="#e6edf3">Edge mesh + identity access</text>
+    <g transform="translate(60,132)">
+      <rect width="312" height="128" rx="10" fill="#0d1117" stroke="#1f2a3d"/>
+      <path id="ztp" d="M30,64 H282" stroke="#1f2a3d" stroke-width="2"/>
+      <circle cx="30" cy="64" r="12" fill="#111826" stroke="#8b98a9"/><text x="30" y="96" text-anchor="middle" class="mono" font-size="10" fill="#8b98a9">user</text>
+      <rect x="96" y="44" width="40" height="40" rx="8" fill="#111826" stroke="#fbbf24"/><text x="116" y="69" text-anchor="middle" class="mono" font-size="10" fill="#fbbf24">WARP</text>
+      <rect x="176" y="44" width="40" height="40" rx="8" fill="#111826" stroke="#a78bfa"/><text x="196" y="69" text-anchor="middle" class="mono" font-size="10" fill="#a78bfa">TP</text>
+      <rect x="258" y="48" width="36" height="32" rx="6" fill="#111826" stroke="#34d399"/><text x="276" y="68" text-anchor="middle" class="mono" font-size="10" fill="#34d399">app</text>
+      <text x="116" y="104" text-anchor="middle" class="mono" font-size="9.5" fill="#8b98a9">device</text>
+      <text x="196" y="104" text-anchor="middle" class="mono" font-size="9.5" fill="#8b98a9">identity</text>
+      <circle r="5" fill="#22d3ee"><animateMotion dur="3s" repeatCount="indefinite" keyPoints="0;.3;.33;.6;.63;1" keyTimes="0;.25;.4;.6;.75;1" calcMode="linear"><mpath href="#ztp"/></animateMotion></circle>
+      <circle cx="116" cy="30" r="5" fill="#34d399" opacity="0"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.3;.38;.5;1" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="196" cy="30" r="5" fill="#34d399" opacity="0"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.6;.68;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+    </g>
+    <text x="60" y="292" class="sans" font-size="14" fill="#8b98a9">WireGuard/VyOS hub-and-spoke for 30+ nodes,</text>
+    <text x="60" y="312" class="sans" font-size="14" fill="#8b98a9">HA Teleport for 120 apps, Cloudflare WARP</text>
+    <text x="60" y="332" class="sans" font-size="14" fill="#8b98a9">in front for defense in depth.</text>
+    <text x="60" y="366" class="mono" font-size="11.5" fill="#22d3ee">wireguard · vyos · teleport · terraform</text>
+  </g>
+<g class="card" style="animation-delay:0.15s">
+    <rect x="420" y="36" width="360" height="358" rx="16" fill="#111826" stroke="#1f2a3d"/>
+    
+    <text x="444" y="76" class="mono" font-size="12" fill="#a78bfa" letter-spacing="1.5">02 · AI DEV PLATFORM</text>
+    <text x="444" y="104" class="sans" font-size="20" font-weight="700" fill="#e6edf3">Claude Code for 50 engineers</text>
+    <g transform="translate(444,132)">
+      <rect width="312" height="128" rx="10" fill="#0d1117" stroke="#1f2a3d"/>
+      <circle cx="30" cy="24" r="9" fill="#111826" stroke="#8b98a9"/><path id="ai0" d="M40,24 C 90,24 90,64 128,64 L 270,64" stroke="#1f2a3d" stroke-width="1.6"/><circle r="4" fill="#a78bfa"><animateMotion dur="2.6s" begin="0.0s" repeatCount="indefinite"><mpath href="#ai0"/></animateMotion></circle><circle cx="30" cy="64" r="9" fill="#111826" stroke="#8b98a9"/><path id="ai1" d="M40,64 C 90,64 90,64 128,64 L 270,64" stroke="#1f2a3d" stroke-width="1.6"/><circle r="4" fill="#a78bfa"><animateMotion dur="2.6s" begin="0.8s" repeatCount="indefinite"><mpath href="#ai1"/></animateMotion></circle><circle cx="30" cy="104" r="9" fill="#111826" stroke="#8b98a9"/><path id="ai2" d="M40,104 C 90,104 90,64 128,64 L 270,64" stroke="#1f2a3d" stroke-width="1.6"/><circle r="4" fill="#a78bfa"><animateMotion dur="2.6s" begin="1.6s" repeatCount="indefinite"><mpath href="#ai2"/></animateMotion></circle>
+      <rect x="128" y="44" width="70" height="40" rx="8" fill="#111826" stroke="#a78bfa"/>
+      <text x="163" y="68" text-anchor="middle" class="mono" font-size="10" fill="#a78bfa">LiteLLM</text>
+      <rect x="236" y="44" width="62" height="40" rx="8" fill="#111826" stroke="#fbbf24"/>
+      <text x="267" y="68" text-anchor="middle" class="mono" font-size="10" fill="#fbbf24">Bedrock</text>
+      <text x="128" y="106" class="mono" font-size="9.5" fill="#8b98a9">budget</text>
+      <rect x="170" y="99" width="128" height="7" rx="3.5" fill="#1f2a3d"/>
+      <rect x="170" y="99" width="0" height="7" rx="3.5" fill="#34d399">
+        <animate attributeName="width" values="0;92;92;0" keyTimes="0;.7;.92;1" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#34d399;#fbbf24;#fbbf24;#34d399" keyTimes="0;.7;.92;1" dur="5s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <text x="444" y="292" class="sans" font-size="14" fill="#8b98a9">LiteLLM gateway on ECS Fargate routing to</text>
+    <text x="444" y="312" class="sans" font-size="14" fill="#8b98a9">AWS Bedrock with org and per-user budgets;</text>
+    <text x="444" y="332" class="sans" font-size="14" fill="#8b98a9">skills + subagents drive 100% of PRs.</text>
+    <text x="444" y="366" class="mono" font-size="11.5" fill="#a78bfa">litellm · ecs · bedrock · claude code</text>
+  </g>
+<g class="card" style="animation-delay:0.30s">
+    <rect x="804" y="36" width="360" height="358" rx="16" fill="#111826" stroke="#1f2a3d"/>
+    
+    <text x="828" y="76" class="mono" font-size="12" fill="#34d399" letter-spacing="1.5">03 · SECURITY &amp; OBSERVABILITY</text>
+    <text x="828" y="104" class="sans" font-size="20" font-weight="700" fill="#e6edf3">Audit-ready, fully observed</text>
+    <g transform="translate(828,132)">
+      <rect width="312" height="128" rx="10" fill="#0d1117" stroke="#1f2a3d"/>
+      <text x="16" y="24" class="mono" font-size="9.5" fill="#8b98a9">trivy crit+high</text>
+      <rect x="16" y="34" width="22" height="80" rx="3" fill="#f87171" opacity=".85">
+        <animate attributeName="height" values="80;80;3;3;80" keyTimes="0;.2;.5;.9;1" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="34;34;111;111;34" keyTimes="0;.2;.5;.9;1" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#f87171;#f87171;#34d399;#34d399;#f87171" keyTimes="0;.2;.5;.9;1" dur="6s" repeatCount="indefinite"/>
+      </rect>
+      <text x="48" y="64" class="sans" font-size="22" font-weight="800" fill="#e6edf3">83<animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.45;.5;.9;1" dur="6s" repeatCount="indefinite"/></text>
+      <text x="48" y="64" class="sans" font-size="22" font-weight="800" fill="#34d399" opacity="0">3<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.45;.5;.9;1" dur="6s" repeatCount="indefinite"/></text>
+      <text x="48" y="84" class="mono" font-size="9.5" fill="#8b98a9">findings</text>
+      <text x="120" y="24" class="mono" font-size="9.5" fill="#8b98a9">grafana · edge fleet</text>
+      <g transform="translate(120,36)">
+        <clipPath id="sc"><rect width="176" height="80"/></clipPath>
+        <g clip-path="url(#sc)">
+          <g>
+            <path d="M0.0,60.0 L26.0,37.3 L52.0,34.6 L78.0,50.7 L104.0,67.2 L130.0,70.6 L156.0,64.6 L182.0,60.0 L208.0,59.8 L234.0,59.7 L260.0,59.1 L286.0,62.8 L312.0,70.8" stroke="#22d3ee" stroke-width="2" fill="none"/>
+            <path d="M0.0,60.0 L26.0,37.3 L52.0,34.6 L78.0,50.7 L104.0,67.2 L130.0,70.6 L156.0,64.6 L182.0,60.0 L208.0,59.8 L234.0,59.7 L260.0,59.1 L286.0,62.8 L312.0,70.8" stroke="#22d3ee" stroke-width="2" fill="none" transform="translate(312,0)"/>
+            <animateTransform attributeName="transform" type="translate" from="0 0" to="-312 0" dur="8s" repeatCount="indefinite"/>
+          </g>
+        </g>
+        <path d="M0,79 H176" stroke="#1f2a3d"/>
+      </g>
+    </g>
+    <text x="828" y="292" class="sans" font-size="14" fill="#8b98a9">Cleared a third-party cloud security audit,</text>
+    <text x="828" y="312" class="sans" font-size="14" fill="#8b98a9">automated Security Hub remediation, Wazuh</text>
+    <text x="828" y="332" class="sans" font-size="14" fill="#8b98a9">SIEM and a self-hosted LGTM stack.</text>
+    <text x="828" y="366" class="mono" font-size="11.5" fill="#34d399">trivy · security hub · wazuh · grafana</text>
+  </g>
+</g>
+<rect x=".5" y=".5" width="1199" height="429" rx="18" stroke="#1f2a3d"/>
+</svg>
