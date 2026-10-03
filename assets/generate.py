@@ -148,7 +148,7 @@ def header():
       <animate attributeName="opacity" values="1;0;1" dur="1s" calcMode="discrete" repeatCount="indefinite"/>
       <animate attributeName="x" values="{caret_vals}" keyTimes="{caret_kts}" dur="{cycle}s" repeatCount="indefinite"/>
     </rect>
-    <text x="64" y="276" class="sans" font-size="16" fill="{MUTED}">Software Engineer @ Aurm · sole infrastructure engineer, reporting to the CTO</text>
+    <text x="64" y="276" class="sans" font-size="16" fill="{MUTED}">Software Engineer @ Aurm · infrastructure, security and AI platforms</text>
     <text x="64" y="302" class="sans" font-size="16" fill="{MUTED}">AWS · GCP · Cloudflare Zero Trust · WireGuard · Teleport · Terraform</text>
   </g>
 '''

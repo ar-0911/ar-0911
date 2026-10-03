@@ -125,7 +125,7 @@
       <animate attributeName="opacity" values="1;0;1" dur="1s" calcMode="discrete" repeatCount="indefinite"/>
       <animate attributeName="x" values="172;172;422;422;172;172;400;400;172;172;465;465;172;172;411;411;172;172" keyTimes="0.0000;0.0000;0.0750;0.2125;0.2425;0.2500;0.3250;0.4625;0.4925;0.5000;0.5750;0.7125;0.7425;0.7500;0.8250;0.9625;0.9925;1.0000" dur="12.0s" repeatCount="indefinite"/>
     </rect>
-    <text x="64" y="276" class="sans" font-size="16" fill="#8b98a9">Software Engineer @ Aurm · sole infrastructure engineer, reporting to the CTO</text>
+    <text x="64" y="276" class="sans" font-size="16" fill="#8b98a9">Software Engineer @ Aurm · infrastructure, security and AI platforms</text>
     <text x="64" y="302" class="sans" font-size="16" fill="#8b98a9">AWS · GCP · Cloudflare Zero Trust · WireGuard · Teleport · Terraform</text>
   </g>
 
