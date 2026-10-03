@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/header.svg" width="100%" alt="Aditya Ramguru: infrastructure engineer working on zero-trust networking, cloud security and AI developer platforms" />
+<img src="assets/header-v2.svg" width="100%" alt="Aditya Ramguru: infrastructure engineer working on zero-trust networking, cloud security and AI developer platforms" />
 
 <a href="https://www.linkedin.com/in/aditya-ramguru-995423218/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:aditya.ramguru@gmail.com"><img src="https://img.shields.io/badge/Email-22d3ee?style=for-the-badge&logo=gmail&logoColor=0d1117" alt="Email" /></a>
@@ -9,11 +9,11 @@
 
 <br/><br/>
 
-<img src="assets/title-impact.svg" width="100%" alt="Impact" />
-<img src="assets/stats.svg" width="100%" alt="Impact: zero-trust by default, one governed AI gateway, agentic engineering, audit-ready cloud" />
+<img src="assets/title-impact-v2.svg" width="100%" alt="Impact" />
+<img src="assets/impact.svg" width="100%" alt="Impact: zero-trust by default, one governed AI gateway, agentic engineering, audit-ready cloud" />
 
 <img src="assets/title-build.svg" width="100%" alt="What I build" />
-<img src="assets/work.svg" width="100%" alt="What I build: zero-trust remote access, an AI gateway with agentic coding, and audit-ready, observed infrastructure" />
+<img src="assets/work-v2.svg" width="100%" alt="What I build: zero-trust remote access, an AI gateway with agentic coding, and audit-ready, observed infrastructure" />
 
 <img src="assets/title-stack.svg" width="100%" alt="Stack" />
 <img src="assets/stack.svg" width="100%" alt="AWS, Google Cloud, Terraform, Docker, Linux, GitHub Actions, Cloudflare, WireGuard, Teleport, VyOS, Trivy, Wazuh, Grafana, Prometheus, Python, Node.js, Bash, Claude Code" />
