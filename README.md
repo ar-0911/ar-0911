@@ -10,10 +10,10 @@
 <br/><br/>
 
 <img src="assets/title-impact.svg" width="100%" alt="Impact" />
-<img src="assets/stats.svg" width="100%" alt="30+ edge nodes on a WireGuard/VyOS mesh, 120 internal apps behind Teleport and Cloudflare WARP, 96% fewer critical/high Trivy findings, 100% of PRs agent-driven via Claude Code" />
+<img src="assets/stats.svg" width="100%" alt="Impact: zero-trust by default, one governed AI gateway, agentic engineering, audit-ready cloud" />
 
 <img src="assets/title-build.svg" width="100%" alt="What I build" />
-<img src="assets/work.svg" width="100%" alt="Zero-trust access, AI developer platform, and security and observability work" />
+<img src="assets/work.svg" width="100%" alt="What I build: zero-trust remote access, an AI gateway with agentic coding, and audit-ready, observed infrastructure" />
 
 <img src="assets/title-stack.svg" width="100%" alt="Stack" />
 <img src="assets/stack.svg" width="100%" alt="AWS, Google Cloud, Terraform, Docker, Linux, GitHub Actions, Cloudflare, WireGuard, Teleport, VyOS, Trivy, Wazuh, Grafana, Prometheus, Python, Node.js, Bash, Claude Code" />
