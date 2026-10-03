@@ -9,7 +9,7 @@
 
 <br/><br/>
 
-<img src="assets/title-impact.svg" width="100%" alt="Impact" />
+<img src="assets/title-impact-v2.svg" width="100%" alt="Impact" />
 <img src="assets/impact.svg" width="100%" alt="Impact: zero-trust by default, one governed AI gateway, agentic engineering, audit-ready cloud" />
 
 <img src="assets/title-build.svg" width="100%" alt="What I build" />
