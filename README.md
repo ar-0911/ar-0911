@@ -6,7 +6,6 @@
 <a href="https://www.linkedin.com/in/aditya-ramguru-995423218/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:aditya.ramguru@gmail.com"><img src="https://img.shields.io/badge/Email-22d3ee?style=for-the-badge&logo=gmail&logoColor=0d1117" alt="Email" /></a>
 <img src="https://img.shields.io/badge/AWS_Solutions_Architect-232F3E?style=for-the-badge&logoColor=white" alt="AWS Certified Solutions Architect" />
-<img src="https://komarev.com/ghpvc/?username=ar-0911&style=for-the-badge&color=a78bfa&label=profile+views" alt="Profile views" />
 
 <br/><br/>
 
